@@ -75,8 +75,7 @@ while True:
                     print('The base currency is ' + Base)
                     #The comment has a flag character, loop each word
                     for word in comment.body.split():
-                        #start by just checking a word for the character and grabbing the number fomr the word
-                        #will only work on $### format
+
                         if flag in word:
                             #grab all other characters besides the flag character and commas
                             strValue = word.replace(flag, "")
@@ -134,7 +133,7 @@ while True:
                                 head = "Hi, here is **" + strValue + " " + Base +"** converted into...\n\n***\n\n"
                                 body1 = "**USD:** " + str(USDAmt) + " **@Rate:** " + str(USDRt) +"\n\n **EUR:** " + str(EURAmt) + " **@Rate:** " + str(EURRt) +"\n\n **GBP:** " + str(GBPAmt) + " **@Rate:** " + str(GBPRt)
                                 body2 = "\n\n **CAD:** " + str(CADAmt) + " **@Rate:** " + str(CADRt) +"\n\n **AUD:** " + str(AUDAmt) + " **@Rate:** " + str(AUDRt) +"\n\n **JPY:** " + str(JPYAmt) + " **@Rate:** " + str(JPYRt) + "\n\n **BitCoin:** " + str(BTCAmt) + " **@Rate:** " + str(BTCRt)
-                                tail = "\n\n***\n\nI am a bot. You can provide feedback in my subreddit: /r/Currency__Converter"
+                                tail = "\n\n***\n\nI am a bot. You can provide feedback in my subreddit: /r/BOTSUBREDDIT"
 
                                 try:
                                     #Try to reply and log that we already replied to the comment both in the list and the text file
